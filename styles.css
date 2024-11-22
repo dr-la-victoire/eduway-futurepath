@@ -143,6 +143,13 @@ section {
 }
 
 /* CONTACT */
+.contact-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .social-icons {
   border: 5px solid goldenrod;
   width: 50%;
@@ -151,7 +158,6 @@ section {
 
 .icon {
   font-size: 3rem;
-  margin-left: 1em;
   padding: 1em;
   cursor: pointer;
 }
@@ -192,4 +198,64 @@ footer a:hover {
 footer .copyright {
   font-size: 0.8rem;
   margin-top: 0;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVE DESIGNS */
+
+/* EXTRA SMALL SCREENS */
+@media (max-width: 576px) {
+  #hero-section {
+    flex-direction: column;
+    padding-top: 6em;
+  }
+
+  .hero-text button {
+    width: 35%;
+  }
+
+  #about-section .main-text h2 {
+    margin-top: 1.8em;
+  }
+
+  #services-section {
+    margin-top: 43em;
+  }
+
+  #contact-us {
+    width: 100%;
+  }
+
+  #contact-us .main-text,
+  .contact-main {
+    width: 85%;
+  }
+
+  .social-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+/* MORE SMALL DEVICES */
+@media (min-width: 577px) and (max-width: 768px) {
+  #hero-section {
+    flex-direction: column;
+  }
+
+  #about-section .main-text h2 {
+    margin-top: 1.8em;
+  }
+
+  #services-section {
+    margin-top: 28em;
+  }
+}
+
+/* TABLETS AND STUFF */
+@media (min-width: 769px) and (max-width: 992px) {
+  #hero-section {
+    flex-direction: column;
+  }
 }
