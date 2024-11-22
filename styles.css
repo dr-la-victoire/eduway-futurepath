@@ -1,0 +1,195 @@
+/* GENERAL STYLES */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+}
+
+section {
+  height: 100vh;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.main-text {
+  font-family: Roboto, san-serif;
+}
+
+/* NAVBAR STYLES */
+.nav-item {
+  transition: opacity 0.3s ease;
+}
+
+.nav-item a:hover {
+  opacity: 0.7;
+  border-bottom: 2px solid goldenrod;
+}
+
+/* HERO SECTION */
+#hero-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text button {
+  background-color: #000080;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 21%;
+  height: 50px;
+  transition: opacity 0.3s ease;
+}
+
+.hero-text button:hover {
+  opacity: 0.7;
+}
+
+.hero-text button:active {
+  background-color: #fff;
+  color: #000080;
+}
+
+/* BUTTON POPPING ANIMATION */
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.auto-pop {
+  animation: pop 2.5s ease infinite;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  z-index: 2;
+  position: relative;
+  height: auto;
+}
+
+.hero-image .gold-streak {
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%) rotate(-20deg);
+  width: 600px;
+  height: 200px;
+  background: linear-gradient(45deg, #ffd700, #ffa500); /* Gold gradient */
+  opacity: 0.9;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* SERVICES SECTION */
+#services-section {
+  margin-top: 10em;
+  background-color: #000080;
+}
+
+#services-section .main-text h2 {
+  padding-top: 1em;
+  color: white;
+}
+
+.service-card img,
+.testimony-card img {
+  width: 100%;
+  height: auto;
+}
+
+.service-card {
+  padding-bottom: 60px;
+}
+
+/* CAROUSEL STYLES */
+.carousel-indicators [data-bs-target] {
+  background-color: black;
+  margin-top: 1.5em;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}
+
+#why-choose-us {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CONTACT */
+.social-icons {
+  border: 5px solid goldenrod;
+  width: 50%;
+  margin: 2em auto;
+}
+
+.icon {
+  font-size: 3rem;
+  margin-left: 1em;
+  padding: 1em;
+  cursor: pointer;
+}
+
+/* FOOTER STYLES */
+footer {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* FOOTER LINKS */
+footer .footer-text {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+footer .footer-text a,
+footer .copyright {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+footer .footer-text a:hover,
+footer a:hover {
+  color: goldenrod;
+  text-decoration: underline;
+}
+
+/* FOOTER COPYRIGHT */
+footer .copyright {
+  font-size: 0.8rem;
+  margin-top: 0;
+}
