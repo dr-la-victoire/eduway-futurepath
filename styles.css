@@ -202,8 +202,15 @@ footer .copyright {
 
 /* MEDIA QUERIES FOR RESPONSIVE DESIGNS */
 
+/* EXTRA EXTRA SMALL SCREENS */
+@media (max-width: 450px) {
+  #services-section {
+    margin-top: 65em;
+  }
+}
+
 /* EXTRA SMALL SCREENS */
-@media (max-width: 576px) {
+@media (min-width: 450px) and (max-width: 576px) {
   #hero-section {
     flex-direction: column;
     padding-top: 6em;
@@ -231,10 +238,14 @@ footer .copyright {
   }
 
   .social-icons {
-    width: 100%;
+    width: 110%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .icon {
+    padding: 0;
   }
 }
 
