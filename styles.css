@@ -208,6 +208,10 @@ footer .copyright {
     flex-direction: column;
   }
 
+  .hero-text button {
+    width: 35%;
+  }
+
   #services-section {
     margin-top: 65em;
   }
