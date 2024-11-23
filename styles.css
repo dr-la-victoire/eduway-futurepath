@@ -204,6 +204,10 @@ footer .copyright {
 
 /* EXTRA EXTRA SMALL SCREENS */
 @media (max-width: 450px) {
+  #hero-section {
+    flex-direction: column;
+  }
+
   #services-section {
     margin-top: 65em;
   }
