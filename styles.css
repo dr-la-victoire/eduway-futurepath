@@ -1,3 +1,11 @@
+/* DEFINING VARIABLES */
+:root {
+  --gold-colour: #f29c05;
+  --pink-color: #ed116b;
+  --green-color: #84ca32;
+  --blue-color: #537fcf;
+}
+
 /* GENERAL STYLES */
 body {
   font-family: "Open Sans", sans-serif;
@@ -22,7 +30,7 @@ section {
 
 .nav-item a:hover {
   opacity: 0.7;
-  border-bottom: 2px solid goldenrod;
+  border-bottom: 2px solid var(--gold-colour);
 }
 
 /* HERO SECTION */
@@ -95,7 +103,11 @@ section {
   transform: translate(-50%, -50%) rotate(-20deg);
   width: 600px;
   height: 200px;
-  background: linear-gradient(45deg, #ffd700, #ffa500); /* Gold gradient */
+  background: linear-gradient(
+    45deg,
+    #ffd700,
+    var(--gold-colour)
+  ); /* Gold gradient */
   opacity: 0.9;
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
@@ -177,6 +189,10 @@ section {
   font-size: 3.5rem;
 }
 
+.icon:active {
+  color: var(--gold-colour);
+}
+
 /* FOOTER STYLES */
 footer {
   background-color: black;
@@ -205,7 +221,7 @@ footer .copyright {
 
 footer .footer-text a:hover,
 footer a:hover {
-  color: goldenrod;
+  color: var(--gold-colour);
   text-decoration: underline;
 }
 
