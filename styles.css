@@ -227,7 +227,7 @@ footer .copyright {
 footer .footer-text a:hover,
 footer a:hover {
   color: var(--gold-colour);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* FOOTER COPYRIGHT */
